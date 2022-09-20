@@ -5,16 +5,18 @@ int number2 = Convert.ToInt32(Console.ReadLine());;
 
 if(number1 == number2)
     {
-        Console.WriteLine("Введите разные числа");
+        Console.WriteLine("Вы ввели два одинаковых числа");
     }
 else
-{
-    if(number1 > number2)
     {
-    Console.WriteLine($"Большее число: {number1}");
-    Console.WriteLine($"Меньшее число: {number2}");
-    }   
-    else
-    Console.WriteLine($"Большее число: {number2}");
-    Console.WriteLine($"Меньшее число: {number1}");
-}
+        if(number1 > number2)
+        {
+        Console.WriteLine($"Большее число: {number1}");
+        Console.WriteLine($"Меньшее число: {number2}");
+        }   
+        else
+        {
+        Console.WriteLine($"Большее число: {number2}");
+        Console.WriteLine($"Меньшее число: {number1}");
+        }
+    }
